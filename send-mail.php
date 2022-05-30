@@ -2,8 +2,8 @@
 
 	// site owner
 	$site_name = 'vcard HTML5 Template';
-	$sender_domain = 'server@your-domain.com';
-	$to = 'jonhdoeeee@jonhdoe.com';
+	$sender_domain = 'hello@pramodsurya.in';
+	$to = 'pramoodsurya@gmail.com';
 	
 	// contact form fields
 	$name = trim( $_POST['name'] );
