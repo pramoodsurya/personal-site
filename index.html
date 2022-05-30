@@ -270,35 +270,20 @@
                                                 
                                           <!-- .contact-form -->
                                           <div class="contact-form">
-                                            
-                                              <form id="contact-form" class="validate-form" method="POST" data-netlify="true" onSubmit="submit">
-                                                
-                                                  <!-- enter mail subject here -->
-                                                  <input type="hidden" name="contact-form" id="subject" value="You have a new message!">
-                                                    
-                                                  <p>
-                                                    <label for="name">NAME</label>
-                                                    <input type="text" name="name" id="name" class="required">
-                                                  </p>
-                                                    
-                                                  <p>
-                                                    <label for="email">EMAIL</label>
-                                                    <input type="text" name="email" id="email" class="required email">
-                                                  </p>
-                                                    
-                                                  <p class="antispam">Leave this empty if you are a human :
-                                                      <br /><input name="url" />
-                                                  </p>
-                                                    
-                                                  <p>
-                                                    <label for="message">MESSAGE</label>
-                                                    <textarea name="message" id="message" class="required"></textarea>
-                                                  </p>
-                                                    
-                                                  <p>
-                                                    <button class="submit button">Send</button>
-                                                  </p>
-                                                
+
+                                            <form name="contact" method="POST" data-netlify="true" >
+                                                <p>
+                                                  <label>Your Name: <input type="text" name="name" /></label>
+                                                </p>
+                                                <p>
+                                                  <label>Your Email: <input type="email" name="email" /></label>
+                                                </p>
+                                                <p>
+                                                  <label>Message: <textarea name="message"></textarea></label>
+                                                </p>
+                                                <p>
+                                                  <button type="submit">Send</button>
+                                                </p>
                                               </form>
                                             
                                           </div>
@@ -429,7 +414,10 @@
 
 
                 <!-- ALERT : used for contact form mail delivery alert -->
-                <div class="site-alert animated"></div>
+                <div class="site-alert animated">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    This is an alert box.
+                </div>
                 
                 
                 
