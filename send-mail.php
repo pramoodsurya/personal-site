@@ -2,7 +2,7 @@
 
 	// site owner
 	$site_name = 'vcard HTML5 Template';
-	$sender_domain = 'hello@pramodsurya.in';
+	$sender_domain = 'smtpout.secureserver.net';
 	$to = 'pramoodsurya@gmail.com';
 	
 	// contact form fields
