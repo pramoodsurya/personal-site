@@ -71,17 +71,17 @@ body,
 input,
 textarea,
 select {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'roboto', sans-serif;
 	}
 	
 /* HEADINGS */
 h2{font-family: 'Major Mono Display', monospace;}
-h1,
+h1{font-family: 'Roboto', sans-serif;}
 h3,
 h4,
 h5,
 h6 {
- 	font-family: 'Roboto'; font-weight: 400;
+ 	font-family: 'roboto'; font-weight: 400;
 	}
 	
 /* MENU FONT */
@@ -403,10 +403,10 @@ textarea,
 	position: relative; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10% 0; background-size: cover; background-position: center; background-color: #000;
 	}
 .one-page-layout .header {
-	position: absolute; width: 100%; height: 100vh; padding: 0; z-index: 1000;
+	position: absolute; width: 100%; height: 100vh; padding: 0; z-index: 1000; 
 	}
 .header:before {
-    display: block; content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #275363; opacity: .35; -webkit-transition: opacity 0.5s 0.4s, visibility 0s 0.9s; transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
+    display: block; content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #275363; opacity: .7; -webkit-transition: opacity 0.5s 0.4s, visibility 0s 0.9s; transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
 	}
 .header .site-title {
 	font-size: 44px; font-size: 10vw; letter-spacing: 0; font-weight: 100; color: #fff; line-height: 1; padding: 0; margin: 0;
@@ -414,13 +414,13 @@ textarea,
 .header-title-link + .site-title { margin: 30px 0; font-size: 64px;
 	}
 .site-title img {
-	max-width: 80%;	margin-bottom: 16px;
+	max-width: 80%;	margin-bottom: 16px; 
 	}
 .site-description {
 	font-size: 12px; color: #fff;
 	}
 .header-wrap > img {
-	display: none;
+	display: none; 
 	}
 
 /* NAV MENU */
@@ -1852,3 +1852,13 @@ select:focus,
 .cd-item:nth-of-type(4) a:before {
  	background-color: #152317;
     }
+
+
+.static{
+	position:absolute;
+	background-image: url(/images/home/portfolio.png);
+	  }
+	  
+	.static:hover {
+	background-image: url(/images/home/portfolio.gif)
+	  }
