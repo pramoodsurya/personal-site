@@ -246,16 +246,18 @@
                                           <!-- .contact-form -->
                                           <div class="contact-form">
 
-                                            <form name="contact" method="POST" data-netlify="true" >
+                                            <form name="contact" class="validate-form" method="POST" data-netlify="true" >
                                                 <p>
                                                   <label>Your Name: <input type="text" name="name" /></label>
+                                                  <input type="text" name="name" id="name" class="required">
                                                 </p>
                                                 <p>
                                                   <label>Your Email: <input type="email" name="email" /></label>
+                                                  <input type="text" name="email" id="email" class="required email">
                                                 </p>
                                                 <div><p>
                                                     <label for="budget">Budget</label>
-                                                    <select style="width:238px;" name="budget" id="budget">
+                                                    <select style="width:238px;" name="budget" id="budget" class="required">
                                                       <option value="$1000">$1000</option>
                                                       <option value="$2000">$2000</option>
                                                       <option value="$3000">$3000</option>
@@ -270,22 +272,23 @@
                                                     <label>Requirement</label>
                                       
                                                     <label class="inline-label">
-                                                        <input type="radio" name="Requirement" value="male">AD Film
+                                                        <input type="radio" name="Requirement" value="male" class="required">AD Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="male">Promo Film
+                                                        <input type="radio" name="gender[]" value="male" class="required">Promo Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="female">Documentry Film
+                                                        <input type="radio" name="gender[]" value="female" class="required">Documentry Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="female" >Feature Film
+                                                        <input type="radio" name="gender[]" value="female" class="required">Feature Film
                                                     </label>
                                                 </p>
                                                 <p>
-                                                  <label>Message: <textarea name="message"></textarea></label>
+                                                  <label>Message: <textarea name="message"></label>
+                                                    <textarea name="message" id="message" class="required"></textarea>
                                                 </p>
-                                                <div class="antispam" data-netlify-recaptcha="true">
+                                                <div data-netlify-recaptcha="true" class="required">
                                                 </div>
                                                 
                                                 <p>
