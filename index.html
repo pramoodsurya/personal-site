@@ -285,17 +285,8 @@
                                                 <p>
                                                   <label>Message: <textarea name="message"></textarea></label>
                                                 </p>
-                                                    <div class="g-recaptcha" data-netlify-recaptcha="true"> 
-                                                        <script>
-                                                        function onClick(e) {
-                                                        e.preventDefault();
-                                                        grecaptcha.ready(function() {
-                                                            grecaptcha.execute('6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl', {action: 'submit'}).then(function(token) {
-                                                                // Add your logic to submit to your backend server here.
-                                                            });
-                                                        });
-                                                        }
-                                                    </script>
+                                                    <div data-netlify-recaptcha="true"> 
+
                                                     </div>
                                                     <input type="submit" class="button btn-send" value="Send message">
                                                 
