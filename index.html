@@ -247,12 +247,14 @@
                                           <div class="contact-form">
 
                                             <form name="contact" method="POST" data-netlify="true" >
-                                                <p>
-                                                  <label>Your Name: <input type="text" name="name" /></label>
-                                                </p>
-                                                <p>
-                                                  <label>Your Email: <input type="email" name="email" /></label>
-                                                </p>
+                                                <div>                                               
+                                                    <p>
+                                                    <label>Your Name: <input type="text" name="name" /></label>
+                                                  </p>
+                                                  <p>
+                                                    <label>Your Email: <input type="email" name="email" /></label>
+                                                  </p>
+                                                </div>
                                                 <div><p>
                                                     <label for="budget">Budget</label>
                                                     <select style="width:238px;" name="budget" id="budget">
@@ -266,25 +268,30 @@
                                                     <label for="attach-file">Attach a file</label>
                                                     <input type="file" name="attach-file" id="attach-file">
                                                 </p></div>
-                                                <p>
-                                                    <label>Requirement</label>
-                                      
-                                                    <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="male">AD Film
-                                                    </label>
-                                                    <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="male">Promo Film
-                                                    </label>
-                                                    <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="female">Documentry Film
-                                                    </label>
-                                                    <label class="inline-label">
-                                                        <input type="radio" name="gender[]" value="female" >Feature Film
-                                                    </label>
-                                                </p>
-                                                <p>
-                                                  <label>Message: <textarea name="message"></textarea></label>
-                                                </p>
+                                                <div id="wrapper">
+                                                    <div id="left"><p>
+                                                        <label>Requirement</label>
+                                          
+                                                        <label class="inline-label">
+                                                            <input type="radio" name="gender[]" value="male">AD Film
+                                                        </label>
+                                                        <label class="inline-label">
+                                                            <input type="radio" name="gender[]" value="male">Promo Film
+                                                        </label>
+                                                        <label class="inline-label">
+                                                            <input type="radio" name="gender[]" value="female">Documentry Film
+                                                        </label>
+                                                        <label class="inline-label">
+                                                            <input type="radio" name="gender[]" value="female" >Feature Film
+                                                        </label>
+                                                    </p></div>
+                                                    <div id="right">
+                                                        <p>
+                                                            <label>Message: <textarea name="message"></textarea></label>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
                                                 <div data-netlify-recaptcha="true"> 
                                                 </div>
                                             <div><input type="submit" class="button btn-send" value="Send message"></div>

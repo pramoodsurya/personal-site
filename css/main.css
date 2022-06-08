@@ -1863,6 +1863,10 @@ select:focus,
 	background-image: url(/images/home/portfolio.gif)
 	  }
 
+#left, #right {
+	width: 537px; //change this to whatever required
+	float: left;
+	}
 
 .g-recaptcha {
 	margin-bottom: 20px;
