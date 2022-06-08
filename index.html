@@ -246,7 +246,7 @@
                                           <!-- .contact-form -->
                                           <div class="contact-form">
 
-                                            <form name="contact" class="validate-form flex-itemform form" id="formV" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                                            <form name="contact" class="validate-form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                                                 <input type="hidden" name="subject" id="subject" value="You have a new message from a Client!">
                                                 <p>
                                                   <label for="name">NAME</label>
@@ -291,14 +291,10 @@
                                                 </p>
                                                 <div data-netlify-recaptcha="true">
                                                 </div>
-
-                                                <div>
-                                                    <button 
-                                                      class="g-recaptcha"
-                                                      data-sitekey="6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl"
-                                                      data-callback="onSubmit"
-                                                      data-size="invisible">Send</button>
-                                                </div>
+                                                
+                                                <p style="margin-top: 100px;">
+                                                  <button data-netlify-recaptcha="true" type="submit">Send</button>
+                                                </p>
                                               </form>
                                             
                                           </div>
@@ -456,12 +452,6 @@
         <script src="js/jquery.fitvids.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script>
-          function onSubmit() {
-            document.getElementById("formV").submit();
-          }
-        </script>
         <script src="https://www.google.com/recaptcha/api.js?render=6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl"></script>
 
         <script src="https://maps.googleapis.com/maps/api/js"></script>
