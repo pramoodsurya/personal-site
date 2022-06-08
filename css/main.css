@@ -208,16 +208,16 @@ form p {
  	position: relative; margin: 1.6em 0;
 	}
 label {
- 	display: block; font-size: 10px; letter-spacing: 1px; font-weight: 700; margin-bottom: 0.6em; text-transform: uppercase;
+ 	display: block; font-size: 10px; letter-spacing: 1px; font-weight: 700; margin-bottom: 0.6em; text-transform: uppercase; color: #4ECE99;
 	}
 ::-webkit-input-placeholder { 
-	color: rgba(51, 68, 85, 0.34);
+	color: rgb(255, 255, 255);
 	}
 ::-moz-placeholder { 
-	color: rgba(51, 68, 85, 0.34);
+	color: rgb(255, 255, 255);
 	} 
 :-ms-input-placeholder { 
-	color: rgba(51, 68, 85, 0.34);
+	color: rgb(255, 255, 255);
 	}
 label input { 
     font-weight: 400;
@@ -225,7 +225,7 @@ label input {
 input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]),
 textarea,
 select {
- 	padding: 1em; width: 100%; font-size: .925rem; color: #345; border: 2px solid rgba(0, 0, 0, 0.07); border-radius: 0; background-color: transparent; -webkit-appearance: none; -webkit-tap-highlight-color: transparent; box-sizing: border-box;
+ 	padding: 1em; width: 100%; font-size: .925rem; color: rgb(255, 255, 255); border: 2px solid rgb(255, 255, 255); border-radius: 0; background-color:rgb(40, 47, 54); -webkit-appearance: none; -webkit-tap-highlight-color: transparent; box-sizing: border-box;
 	}
 input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]):hover,
 textarea:hover,
@@ -252,17 +252,17 @@ input[type=file]{
 	width: 100%; outline: 0; cursor: pointer; font-size: 13px;
 	}
 input[type=file]::-webkit-file-upload-button {
-	display: inline-block; padding: .6em 1em; outline: 0; color: #333; background-color: transparent; border: 1px solid #999; cursor: pointer;
+	display: inline-block; padding: .6em 1em; outline: 0; color: #ffffff; background-color: transparent; border: 1px solid #4ECE99; cursor: pointer;
 	}
 input[type=checkbox] {
-    -webkit-appearance: none; height: 1em; position: relative; background-color: transparent; border: 2px solid #333; width: 1em; border-radius: 3px; outline: none;  font-size: 15px; vertical-align: text-bottom; margin-right: .6em;
+    -webkit-appearance: none; height: 1em; position: relative; background-color: transparent; border: 2px solid rgb(248, 248, 248); width: 1em; border-radius: 3px; outline: none;  font-size: 15px; vertical-align: text-bottom; margin-right: .6em;
 	}
 input[type=checkbox]:active {
-    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 0.8em rgb(78, 206, 153) inset;
 	}
 input[type=checkbox]:before,
 input[type=checkbox]:after {
-    content: ''; background-color: inherit; position: absolute; transition: 0.1s background-color;
+    content: ''; background-color: white; position: absolute; transition: 0.1s ;
 	}
 input[type=checkbox]:after {
     width: 0.14em; height: 0.60em; -webkit-transform: rotate(36deg) translate(0.42em, -0.17em);
@@ -275,10 +275,10 @@ input[type=checkbox]:checked:before {
     background-color: #333;
 	}
 input[type=radio] {
-    -webkit-appearance: none; height: 1em; position: relative; background-color: #fff; border: 2px solid #333; width: 1em; border-radius: 50%; outline: none; font-size: 15px; margin-right: .6em; vertical-align: text-bottom;
+    -webkit-appearance: none; height: 1em; position: relative; background-color: rgb(40, 47, 54); border: 2px solid rgba(255, 255, 255, 0.336); width: 1em; border-radius: 50%; outline: none; font-size: 15px; margin-right: .6em; vertical-align: text-bottom;
 	}
 input[type=radio]:checked:before {
-    content: ''; background-color: #333; position: absolute; border-radius: 50%; top: 3px; left: 3px; bottom: 3px; right: 3px;
+    content: ''; background-color: #4ECE99; position: absolute; border-radius: 50%; top: 3px; left: 3px; bottom: 3px; right: 3px;
 	}
 .inline-label {
  	display: inline-block; margin-right: 2.2em;
@@ -864,7 +864,7 @@ a.button:active {
 .page-bottom input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]), 
 .page-bottom textarea, 
 .page-bottom select {
-	font-size: 12px; color: #fff; border-width: 1px; border-color: rgba(113, 255, 217, 0.2);
+	font-size: 12px; color: #fff; border-width: 1px; border-color: rgba(255, 255, 255, 0.2);
 	}
 .page-bottom input:not([type=submit]):not([type=button]):not([type=file]):not([type=radio]):not([type=checkbox]):focus, 
 .page-bottom textarea:focus, 
@@ -1862,3 +1862,5 @@ select:focus,
 	.static:hover {
 	background-image: url(/images/home/portfolio.gif)
 	  }
+
+

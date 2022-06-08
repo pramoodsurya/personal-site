@@ -253,9 +253,49 @@
                                                 <p>
                                                   <label>Your Email: <input type="email" name="email" /></label>
                                                 </p>
+                                                <div><p>
+                                                    <label for="budget">Budget</label>
+                                                    <select style="width:238px;" name="budget" id="budget">
+                                                      <option value="$1000">$1000</option>
+                                                      <option value="$2000">$2000</option>
+                                                      <option value="$3000">$3000</option>
+                                                      <option value="$5000+">$5000+</option>
+                                                    </select>
+                                                </p>
+                                                <p>
+                                                    <label for="attach-file">Attach a file</label>
+                                                    <input type="file" name="attach-file" id="attach-file">
+                                                </p></div>
+                                                <p>
+                                                    <label>Requirement</label>
+                                      
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="gender[]" value="male">AD Film
+                                                    </label>
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="gender[]" value="male">Promo Film
+                                                    </label>
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="gender[]" value="female">Documentry Film
+                                                    </label>
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="gender[]" value="female" >Feature Film
+                                                    </label>
+                                                </p>
                                                 <p>
                                                   <label>Message: <textarea name="message"></textarea></label>
                                                 </p>
+                                                <div data-netlify-recaptcha="true"> 
+                                                    <script>
+                                                    function onClick(e) {
+                                                      e.preventDefault();
+                                                      grecaptcha.ready(function() {
+                                                        grecaptcha.execute('6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl', {action: 'submit'}).then(function(token) {
+                                                            // Add your logic to submit to your backend server here.
+                                                        });
+                                                      });
+                                                    }
+                                                </script></div>
                                                 <p>
                                                   <button type="submit">Send</button>
                                                 </p>
@@ -416,17 +456,16 @@
         <script src="js/jquery.fitvids.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-        
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl"></script>
+
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB19llEvtFGjGVjfw1KbVVfPciBs5Od-Rw"></script>
-        <script src="js/googlemap-grayistic.js"></script>
         <!--
         if your map doesn't show by default, you need google map api key;
         Get you api key here : https://developers.google.com/maps/documentation/javascript/get-api-key
         and use it like this;
        
         -->
-        
         <script src="js/main.js"></script>
         
 	</body>
