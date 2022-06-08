@@ -256,41 +256,52 @@
                                                 <div><p>
                                                     <label for="budget">Budget</label>
                                                     <select style="width:238px;" name="budget" id="budget">
-                                                        <option value="$1000">$1000</option>
-                                                        <option value="$2000">$2000</option>
-                                                        <option value="$3000">$3000</option>
-                                                        <option value="$5000+">$5000+</option>
+                                                      <option value="$1000">$1000</option>
+                                                      <option value="$2000">$2000</option>
+                                                      <option value="$3000">$3000</option>
+                                                      <option value="$5000+">$5000+</option>
                                                     </select>
-                                                    </p>
+                                                </p>
                                                 <p>
                                                     <label for="attach-file">Attach a file</label>
                                                     <input type="file" name="attach-file" id="attach-file">
                                                 </p></div>
                                                 <p>
                                                     <label>Requirement</label>
+                                      
                                                     <label class="inline-label">
-                                                        <input type="radio" name="Requirement[]" value="AD Film">AD Film
+                                                        <input type="radio" name="gender[]" value="male">AD Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="Requirement[]" value="Promo Film">Promo Film
+                                                        <input type="radio" name="gender[]" value="male">Promo Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="Requirement[]" value="Documentry Film">Documentry Film
+                                                        <input type="radio" name="gender[]" value="female">Documentry Film
                                                     </label>
                                                     <label class="inline-label">
-                                                        <input type="radio" name="Requirement[]" value="Feature Film" >Feature Film
+                                                        <input type="radio" name="gender[]" value="female" >Feature Film
                                                     </label>
                                                 </p>
                                                 <p>
                                                   <label>Message: <textarea name="message"></textarea></label>
                                                 </p>
-                                                
-                                                <div data-netlify-recaptcha="true"></div>
-
+                                                <div data-netlify-recaptcha="true"> 
+                                                    <script>
+                                                    function onClick(e) {
+                                                      e.preventDefault();
+                                                      grecaptcha.ready(function() {
+                                                        grecaptcha.execute('6LfSm1MgAAAAABI2F1zub_0KL9GVeICctGTeiksl', {action: 'submit'}).then(function(token) {
+                                                            // Add your logic to submit to your backend server here.
+                                                        });
+                                                      });
+                                                    }
+                                                </script>
+                                                </div>
+                                                <div>
                                                 <p>
-                                                    <button style="margin-top:120px" type="submit">Send Message</button>
-                                                  </p>
-                                            </form>
+                                                  <button type="submit">Send</button>
+                                                </p>
+                                              </form>
                                             
                                           </div>
                                           <!-- .contact-form -->
@@ -302,7 +313,7 @@
                                     	
                                         
                                       <!-- .col-md-12 -->
-                                      <div class="col-md-12" >
+                                      <div class="col-md-12">
                                         
                                           <!-- fun-fact -->
                                           <div class="fun-fact">
