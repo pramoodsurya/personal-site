@@ -1864,7 +1864,7 @@ select:focus,
 	  }
 
 #left, #right {
-	width: 525px; //change this to whatever required
+	width: 200px; //change this to whatever required
 	float: left;
 	}
 
