@@ -666,7 +666,27 @@
 			
 			contactForm.submit(function()
 			{
-				if (contactForm.valid())
+				if (contactForm.valid({
+					ignore: ".ignore",
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						hiddenRecaptcha: {
+							required: function () {
+								if (grecaptcha.getResponse() == '') {
+									return true;
+								} else {
+									return false;
+								}
+							}
+						}
+					}))
 				{
 					NProgress.start();
 					$submit.addClass("active loading");
@@ -704,6 +724,10 @@
 		}
 		
 	}	
+
+	function recaptchaCallback() {
+		$('#hiddenRecaptcha').valid();
+	  };
 	// ------------------------------
 	
 	
